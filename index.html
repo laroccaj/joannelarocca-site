@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joanne LaRocca — In Loving Memory</title>
+  <meta name="description" content="Joanne LaRocca — IN LOVING MEMORY | 1942 – 2012" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Joanne LaRocca — In Loving Memory" />
+  <meta property="og:description" content="IN LOVING MEMORY | 1942 – 2012" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/joanne.jpg" />
+
+  <style>
+    :root{
+      --bg: #ffffff;
+      --text: #111111;
+      --muted: #666666;
+      --rule: rgba(0,0,0,.12);
+      --max: 980px;
+      --radius: 14px;
+    }
+
+    *{ box-sizing: border-box; }
+
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 44px 18px 64px;
+    }
+
+    header{
+      text-align:center;
+      margin-bottom: 26px;
+    }
+
+    h1{
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.1;
+      margin: 0 0 10px;
+      font-weight: 650;
+      letter-spacing: .2px;
+    }
+
+    .sub{
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .rule{
+      height:1px;
+      background: var(--rule);
+      margin: 26px auto 26px;
+      max-width: 720px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      align-items: start;
+    }
+
+    figure{
+      margin:0;
+      border-radius: var(--radius);
+      overflow:hidden;
+      background:#f5f5f5;
+      box-shadow: 0 8px 24px rgba(0,0,0,.06);
+    }
+
+    img{
+      display:block;
+      width:100%;
+      height:auto;
+    }
+
+    /* Make the first image span full width like a “hero” */
+    .hero{
+      grid-column: 1 / -1;
+    }
+
+    @media (max-width: 720px){
+      .grid{
+        grid-template-columns: 1fr;
+      }
+      .hero{
+        grid-column: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Joanne LaRocca</h1>
+      <p class="sub">IN LOVING MEMORY | 1942 – 2012</p>
+    </header>
+
+    <div class="rule" aria-hidden="true"></div>
+
+    <section class="grid" aria-label="Photo gallery">
+      <figure class="hero">
+        <img src="images/joanne-1.jpg" alt="Joanne LaRocca portrait" loading="eager" />
+      </figure>
+
+      <figure>
+        <img src="images/joanne-2.jpg" alt="Photo of Joanne with a loved one" loading="lazy" />
+      </figure>
+
+      <figure>
+        <img src="images/joanne-3.jpg" alt="Photo of Joanne at a dinner table with a loved one" loading="lazy" />
+      </figure>
+
+      <figure>
+        <img src="images/joanne-4" alt="Formal event photo with Joanne and a loved one" loading="lazy" />
+      </figure>
+
+      <figure>
+        <img src="images/joanne-5" alt="Vintage wedding photo" loading="lazy" />
+      </figure>
+    </section>
+  </main>
+</body>
+</html>
